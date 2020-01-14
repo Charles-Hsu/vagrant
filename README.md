@@ -41,4 +41,4 @@ vagrant box list | cut -f 1 -d ' ' | xargs -L 1 vagrant box remove -f
 `
 vagrant init ubuntu/trusty64
 `
-
+![image](https://github.com/Charles-Hsu/vagrant/blob/master/vagrant_init.png)
