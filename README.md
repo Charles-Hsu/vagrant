@@ -9,6 +9,5 @@ https://app.vagrantup.com/ubuntu/boxes/trusty64
 
 `
 % vagrant box list
-
 ubuntu/trusty64 (virtualbox, 20190514.0.0)
 `
