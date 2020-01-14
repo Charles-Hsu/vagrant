@@ -36,6 +36,9 @@ https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/20190514.0.0/providers/v
 }
 `
 vagrant box list | cut -f 1 -d ' ' | xargs -L 1 vagrant box remove -f
-![image](https://github.com/Charles-Hsu/vagrant/blob/master/add_local_vagrant_box.png)
 
+![image](https://github.com/Charles-Hsu/vagrant/blob/master/add_local_vagrant_box.png)
+`
+vagrant init ubuntu/trusty64
+`
 
