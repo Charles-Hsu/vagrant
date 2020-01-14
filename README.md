@@ -11,3 +11,4 @@ https://app.vagrantup.com/ubuntu/boxes/trusty64
     box: Download redirected to host: cloud-images.ubuntu.com
     box: Progress: 95% (Rate: 1686k/s, Estimated time remaining: 0:00:17)
 `
+![image](https://)
