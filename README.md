@@ -84,6 +84,6 @@ Python 3.4.3 (default, Nov 12 2018, 22:25:49)
 
 $ sudo apt-get install python3.6
 $ 
-
+![image](https://github.com/Charles-Hsu/vagrant/blob/master/pythonx.png)
 
 
