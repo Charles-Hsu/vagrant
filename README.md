@@ -86,4 +86,32 @@ $ sudo apt-get install python3.6
 $ 
 ![image](https://github.com/Charles-Hsu/vagrant/blob/master/pythonx.png)
 
+$ ln -s file1 link1
+$ sudo rm python3
+$ sudo ln -s python3.6 python3
+$ pip3 install numpy
+AttributeError: module 'importlib._bootstrap' has no attribute 'SourceFileLoader'
+
+$ python3 -m ensurepip --upgrade
+/usr/bin/python3: No module named ensurepip
+
+$ sudo apt-get install python3.6-venv
+$ python3 -m ensurepip --upgrade
+Could not install packages due to an EnvironmentError: [Errno 13] Permission denied: '/usr/bin/easy_install'
+Consider using the `--user` option or check the permissions.
+
+$ sudo python3 -m ensurepip --upgrade
+Successfully installed pip-18.1 setuptools-40.6.2
+
+$ python3 svm_test_single_image.py
+ModuleNotFoundError: No module named 'numpy'
+
+$ sudo apt-get install python3-pip
+$ pip3 install numpy
+$ sudo python3 -m pip install cython
+$ pip3 install numpy
+
+
+
+
 
