@@ -62,3 +62,10 @@ https://app.vagrantup.com/ubuntu/boxes/trusty64
     `vagrantup.com` for more information on using Vagrant.
     
 這時會在目錄裡產生一個 Vagrantfile 的設定檔
+
+##### 開始使用 vagrnat box
+
+     $ cd ubuntu_trusty64
+     $ vagrant up
+     
+![image](https://github.com/Charles-Hsu/vagrant/blob/master/vagrant_up.png)
