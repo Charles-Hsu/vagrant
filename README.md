@@ -17,9 +17,9 @@ https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/20190514.0.0/providers/v
 
 下載到 local 來
 
-在 local 建一個檔案 metadata.json
-`
-{
+在 local 建一個檔案 metadata-ubuntu-trusty64.json
+
+    {
     "name": "ubuntu/trusty64",
     "versions": 
     [
@@ -33,7 +33,7 @@ https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/20190514.0.0/providers/v
             ]
         }
     ]
-}
+    }
 `
 vagrant box list | cut -f 1 -d ' ' | xargs -L 1 vagrant box remove -f
 
