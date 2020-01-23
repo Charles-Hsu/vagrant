@@ -20,22 +20,23 @@ https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/20190514.0.0/providers/v
 在 local 建一個檔案 metadata-ubuntu-trusty64.json
 
     {
-    "name": "ubuntu/trusty64",
-    "versions": 
-    [
-        {
-            "version": "v20190514.0.0",
-            "providers": [
-                {
-                  "name": "virtualbox",
-                  "url": "ubuntu_trusty-v20190514.0.0.box"
-                }
-            ]
-        }
-    ]
+        "name": "ubuntu/trusty64",
+        "versions": 
+        [
+            {
+                "version": "v20190514.0.0",
+                "providers": [
+                    {
+                      "name": "virtualbox",
+                      "url": "ubuntu_trusty-v20190514.0.0.box"
+                    }
+                ]
+            }
+        ]
     }
-`
-vagrant box list | cut -f 1 -d ' ' | xargs -L 1 vagrant box remove -f
+
+##### 刪除所有的 box 的指令
+    vagrant box list | cut -f 1 -d ' ' | xargs -L 1 vagrant box remove -f
 
 ![image](https://github.com/Charles-Hsu/vagrant/blob/master/add_local_vagrant_box.png)
 `
