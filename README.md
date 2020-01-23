@@ -2,15 +2,12 @@
 
 https://app.vagrantup.com/ubuntu/boxes/trusty64
 
-`
-% vagrant box add "ubuntu/trusty64"
-`
+    % vagrant box add "ubuntu/trusty64"
+
 ![image](https://github.com/Charles-Hsu/vagrant/blob/master/vagrant_add_box.png)
 
-`
-% vagrant box list
-ubuntu/trusty64 (virtualbox, 20190514.0.0)
-`
+    % vagrant box list
+    ubuntu/trusty64 (virtualbox, 20190514.0.0)
 
 但是這樣會倒到 ubuntu 的雲端去, 取得下載網址
 https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/20190514.0.0/providers/virtualbox.box
@@ -18,6 +15,7 @@ https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/20190514.0.0/providers/v
 下載到 local 來, 檔名為
 
     trusty-server-cloudimg-amd64-vagrant-disk1.box
+    
     $ mv trusty-server-cloudimg-amd64-vagrant-disk1.box ubuntu_trusty-v20190514.0.0.box
     
 在 local 建一個檔案 metadata-ubuntu-trusty64.json
