@@ -67,5 +67,6 @@ https://app.vagrantup.com/ubuntu/boxes/trusty64
 
      $ cd ubuntu_trusty64
      $ vagrant up
+     $ vagrant ssh
      
 ![image](https://github.com/Charles-Hsu/vagrant/blob/master/vagrant-up.png)
