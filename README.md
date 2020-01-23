@@ -61,4 +61,4 @@ https://app.vagrantup.com/ubuntu/boxes/trusty64
     the comments in the Vagrantfile as well as documentation on
     `vagrantup.com` for more information on using Vagrant.
     
-##### 這時會在目錄裡產生一個 Vagrantfile 的設定檔
+這時會在目錄裡產生一個 Vagrantfile 的設定檔
