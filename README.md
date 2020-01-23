@@ -15,7 +15,7 @@ https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/20190514.0.0/providers/v
 下載到 local 來, 檔名為
 
     trusty-server-cloudimg-amd64-vagrant-disk1.box
-    
+改個名字
     $ mv trusty-server-cloudimg-amd64-vagrant-disk1.box ubuntu_trusty-v20190514.0.0.box
     
 在 local 建一個檔案 metadata-ubuntu-trusty64.json
