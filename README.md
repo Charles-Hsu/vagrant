@@ -68,4 +68,4 @@ https://app.vagrantup.com/ubuntu/boxes/trusty64
      $ cd ubuntu_trusty64
      $ vagrant up
      
-![image](https://github.com/Charles-Hsu/vagrant/blob/master/vagrant_up.png)
+![image](https://github.com/Charles-Hsu/vagrant/blob/master/vagrant-up.png)
