@@ -10,7 +10,8 @@ https://app.vagrantup.com/ubuntu/boxes/trusty64
     ubuntu/trusty64 (virtualbox, 20190514.0.0)
 
 但是這樣會倒到 ubuntu 的雲端去, 取得下載網址
-https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/20190514.0.0/providers/virtualbox.box
+    
+    https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/20190514.0.0/providers/virtualbox.box
 
 下載到 local 來, 檔名為
 
@@ -41,8 +42,14 @@ https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/20190514.0.0/providers/v
 ##### 刪除所有的 box 的指令
 
     vagrant box list | cut -f 1 -d ' ' | xargs -L 1 vagrant box remove -f
+    
+##### 加入 box 的指令
+
+    vagrant box add metadata-ubuntu-trusty64.json
 
 ![image](https://github.com/Charles-Hsu/vagrant/blob/master/add_local_vagrant_box.png)
+
+##### 初始化 box 的指令
 
     vagrant init ubuntu/trusty64
 
