@@ -109,4 +109,5 @@ https://app.vagrantup.com/ubuntu/boxes/trusty64
     3. /cli/config.py
     4. /cli/gobelieve_client*.py
 
+    mysql> FLUSH PRIVILEGES;
 
