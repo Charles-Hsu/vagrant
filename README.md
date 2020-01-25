@@ -70,3 +70,25 @@ https://app.vagrantup.com/ubuntu/boxes/trusty64
      $ vagrant ssh
      
 ![image](https://github.com/Charles-Hsu/vagrant/blob/master/vagrant-up.png)
+
+#### 改壞了 /etc/networking/interface 檔
+
+設定要取得外部的網路 IP 位址, 直接去更改 /etc/networking/interface 檔, 結果無法執行 vagrant up. google 結果似乎是要直接更改 Vagranfile 裡頭的 networking 的設定值, 但目前的 vm 已經裝好了 GoBelieveIO 的 chat server, 不太想要重來一次. 發現, 原來可以由 VirtualBox 直接執行 Vagrant VM, 這時會提示你 username 和 password, 直接給 vagrant/vagrant 就可以進去 VM 把 interfaces 改回來.
+
+- 不確定怎麼設定後會跑出 vboxnet0 這個 ifconfig 檔
+
+![](https://github.com/Charles-Hsu/vagrant/blob/master/vagrant-vboxnet0.png)
+
+在 Vangrantbox 檔案裡頭加入這個
+
+    config.vm.network "private_network", ip: "192.168.50.100"
+    
+然後重新載入 Vangrantfile
+
+    $ vagrant reload
+    $ vagrant ssh
+    
+    $ ifconfig
+    
+![](https://github.com/Charles-Hsu/vagrant/blob/master/vagrant-ifconfig-50.100.png)
+
