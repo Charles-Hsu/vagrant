@@ -92,3 +92,13 @@ https://app.vagrantup.com/ubuntu/boxes/trusty64
     
 ![](https://github.com/Charles-Hsu/vagrant/blob/master/vagrant-ifconfig-50.100.png)
 
+如果要設定同一個網域, 需要採用 public_network 設定
+
+    config.vm.network "public_network", ip: "192.168.66.100"
+    
+存檔, reload
+
+    $ vagrant reload
+    
+![](https://github.com/Charles-Hsu/vagrant/blob/master/vagrant-public-66.100.png)
+
