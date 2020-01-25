@@ -100,5 +100,5 @@ https://app.vagrantup.com/ubuntu/boxes/trusty64
 
     $ vagrant reload
     
-![](https://github.com/Charles-Hsu/vagrant/blob/master/vagrant-public-66.100.png)
+![](https://github.com/Charles-Hsu/vagrant/blob/master/vagrant-network-public-66.100.png)
 
