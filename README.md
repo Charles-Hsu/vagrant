@@ -102,3 +102,10 @@ https://app.vagrantup.com/ubuntu/boxes/trusty64
     
 ![](https://github.com/Charles-Hsu/vagrant/blob/master/vagrant-network-public-66.100.png)
 
+之後如果 local 的網域有更動的話, 需要更改
+. mysql -uroot -pGoBelieve123456 mysql
+. Vagrantfile
+. /cli/config.py
+. /cli/gobelieve_client*.py
+
+
